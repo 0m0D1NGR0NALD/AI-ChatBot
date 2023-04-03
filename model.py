@@ -1,5 +1,6 @@
 import torch.nn as nn
 
+# Building model architecture
 class NeuralNet(nn.Module):
     def __init__(self, input_size, embedding_size, hidden_size, output_size):
         super(NeuralNet, self).__init__()
