@@ -29,3 +29,4 @@ for intent in intents['intents']:
 
 # stem and lower each word
 ignore_words = ['?', '.', '!']
+all_words = [stem(w) for w in all_words if w not in ignore_words]
