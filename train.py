@@ -26,3 +26,6 @@ for intent in intents['intents']:
         all_words.extend(w)
         # add to xy pair
         xy.append((w, tag))
+
+# stem and lower each word
+ignore_words = ['?', '.', '!']
