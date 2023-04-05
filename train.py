@@ -13,3 +13,9 @@ with open('intents.json', 'r') as file:
 all_words = []
 tags = []
 xy = []
+
+# loop through each sentence in our intents patterns
+for intent in intents['intents']:
+    tag = intent['tag']
+    # add to tag list
+    tags.append(tag)
