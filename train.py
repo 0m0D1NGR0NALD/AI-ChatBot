@@ -35,3 +35,4 @@ all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
 print(len(xy), "patterns")
+print(len(tags), "tags:", tags)
