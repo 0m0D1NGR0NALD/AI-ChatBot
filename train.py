@@ -51,3 +51,5 @@ for (pattern_sentence, tag) in xy:
 
 X_train = np.array(X_train)
 y_train = np.array(y_train)
+# Hyper-parameters 
+num_epochs = 1000
