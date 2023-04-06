@@ -54,3 +54,4 @@ y_train = np.array(y_train)
 # Hyper-parameters 
 num_epochs = 1000
 batch_size = 8
+learning_rate = 0.001
