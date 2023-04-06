@@ -50,3 +50,4 @@ for (pattern_sentence, tag) in xy:
     y_train.append(label)
 
 X_train = np.array(X_train)
+y_train = np.array(y_train)
