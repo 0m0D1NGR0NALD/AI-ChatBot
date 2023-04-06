@@ -58,3 +58,4 @@ learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
 output_size = len(tags)
+print(input_size, output_size)
