@@ -48,3 +48,5 @@ for (pattern_sentence, tag) in xy:
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     label = tags.index(tag)
     y_train.append(label)
+
+X_train = np.array(X_train)
