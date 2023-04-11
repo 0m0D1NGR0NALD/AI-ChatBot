@@ -65,3 +65,6 @@ class ChatDataset(Dataset):
         self.n_samples = len(X_train)
         self.x_data = X_train
         self.y_data = y_train
+    # support indexing such that dataset[i] can be used to get i-th sample
+    def __getitem__(self, index):
+        return self.x_data[index], self.y_data[index]
