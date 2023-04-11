@@ -60,6 +60,7 @@ hidden_size = 8
 output_size = len(tags)
 print(input_size, output_size)
 
+# Dataset class
 class ChatDataset(Dataset):
     def __init__(self):
         self.n_samples = len(X_train)
@@ -71,9 +72,9 @@ class ChatDataset(Dataset):
     # we can call len(dataset) to return the size
     def __len__(self):
         return self.n_samples
-    
+# Instantiate dataset    
 dataset = ChatDataset()
-
+# Loading train set
 train_loader = DataLoader(dataset=dataset,
                           batch_size=batch_size,
                           shuffle=True,
