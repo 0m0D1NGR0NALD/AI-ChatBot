@@ -106,3 +106,12 @@ for epoch in range(num_epochs):
         print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
         
 print(f'final loss: {loss.item():.4f}')
+
+data = {
+"model_state": model.state_dict(),
+"input_size": input_size,
+"hidden_size": hidden_size,
+"output_size": output_size,
+"all_words": all_words,
+"tags": tags
+}
