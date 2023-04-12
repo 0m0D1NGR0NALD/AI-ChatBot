@@ -115,3 +115,5 @@ data = {
 "all_words": all_words,
 "tags": tags
 }
+
+FILE = "data.pth"
