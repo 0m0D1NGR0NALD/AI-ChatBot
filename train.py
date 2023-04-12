@@ -87,3 +87,6 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+
+# Train the model
+for epoch in range(num_epochs):
