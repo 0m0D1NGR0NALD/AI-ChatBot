@@ -96,3 +96,4 @@ for epoch in range(num_epochs):
         
         # Forward pass
         outputs = model(words)
+        loss = criterion(outputs, labels)
