@@ -90,3 +90,4 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model
 for epoch in range(num_epochs):
+    for (words, labels) in train_loader:
