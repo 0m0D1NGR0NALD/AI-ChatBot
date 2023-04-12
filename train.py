@@ -101,3 +101,4 @@ for epoch in range(num_epochs):
         # Backward and optimize
         optimizer.zero_grad()
         loss.backward()
+        optimizer.step()
