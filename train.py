@@ -93,3 +93,6 @@ for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(dtype=torch.long).to(device)
+        
+        # Forward pass
+        outputs = model(words)
