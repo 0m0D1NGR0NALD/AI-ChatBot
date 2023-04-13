@@ -4,7 +4,7 @@ import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words,tokenize
 
-device = torch,device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Reading content in intents json file
 with open('intents.json','r') as file:
