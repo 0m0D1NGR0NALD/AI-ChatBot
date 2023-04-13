@@ -8,3 +8,6 @@ device = torch,device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json','r') as file:
     intents = json.load(file)
+    
+FILE = "data.pth"
+data = torch.load(FILE)
