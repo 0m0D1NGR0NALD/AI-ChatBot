@@ -6,15 +6,21 @@ from nltk_utils import bag_of_words,tokenize
 
 device = torch,device('cuda' if torch.cuda.is_available() else 'cpu')
 
+# Reading content in intents json file
 with open('intents.json','r') as file:
     intents = json.load(file)
-    
+
+# Loading saved checkpoint
 FILE = "data.pth"
 data = torch.load(FILE)
 
+# Extracting hyper-parameters
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
+
+# Instatiating model
+model = NeuralNet(input_size, hidden_size, output_size).to(device)
