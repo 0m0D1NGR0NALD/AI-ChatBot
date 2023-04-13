@@ -28,4 +28,5 @@ model.load_state_dict(model_state)
 # Set model to evaluation mode
 model.eval()
 
+# Setting bot name
 bot_name = "Chido"
