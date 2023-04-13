@@ -11,3 +11,10 @@ with open('intents.json','r') as file:
     
 FILE = "data.pth"
 data = torch.load(FILE)
+
+input_size = data["input_size"]
+hidden_size = data["hidden_size"]
+output_size = data["output_size"]
+all_words = data['all_words']
+tags = data['tags']
+model_state = data["model_state"]
