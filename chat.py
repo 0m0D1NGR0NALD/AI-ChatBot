@@ -25,6 +25,7 @@ model_state = data["model_state"]
 # Instatiating model
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
+# Set model to evaluation mode
 model.eval()
 
 bot_name = "Chido"
