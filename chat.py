@@ -32,3 +32,4 @@ model.eval()
 bot_name = "Chido"
 
 def get_response(msg):
+    sentence = tokenize(msg)
