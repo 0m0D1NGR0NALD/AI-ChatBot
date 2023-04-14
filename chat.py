@@ -46,3 +46,4 @@ def get_response(msg):
     prob = probs[0][predicted.item()]
     if prob.item() > 0.75:
         for intent in intents['intents']:
+            if tag == intent["tag"]:
