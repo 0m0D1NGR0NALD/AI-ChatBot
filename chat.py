@@ -41,3 +41,5 @@ def get_response(msg):
     _, predicted = torch.max(output, dim=1)
     
     tag = tags[predicted.item()]
+    
+    probs = torch.softmax(output, dim=1)
