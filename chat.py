@@ -39,3 +39,5 @@ def get_response(msg):
     
     output = model(X)
     _, predicted = torch.max(output, dim=1)
+    
+    tag = tags[predicted.item()]
