@@ -38,3 +38,4 @@ def get_response(msg):
     X = torch.from_numpy(X).to(device)
     
     output = model(X)
+    _, predicted = torch.max(output, dim=1)
