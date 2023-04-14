@@ -44,3 +44,4 @@ def get_response(msg):
     
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
+    if prob.item() > 0.75:
