@@ -30,3 +30,5 @@ model.eval()
 
 # Setting bot name
 bot_name = "Chido"
+
+def get_response(msg):
