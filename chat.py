@@ -57,3 +57,5 @@ if __name__ == "__main__":
         sentence = input("You: ")
         if sentence == "quit":
             break
+            
+        resp = get_response(sentence)
