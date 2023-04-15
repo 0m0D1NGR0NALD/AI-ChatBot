@@ -51,3 +51,4 @@ def get_response(msg):
     return "I do not understand..."
 
 if __name__ == "__main__":
+    print("Let's chat! (type 'quit' to exit)")
