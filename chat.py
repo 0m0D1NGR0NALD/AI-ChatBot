@@ -52,3 +52,4 @@ def get_response(msg):
 
 if __name__ == "__main__":
     print("Let's chat! (type 'quit' to exit)")
+    while True:
