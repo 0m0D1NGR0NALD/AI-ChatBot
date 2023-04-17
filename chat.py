@@ -35,6 +35,7 @@ bot_name = "Chido"
 def get_response(msg):
     # Tokenize input
     sentence = tokenize(msg)
+    # Create bag of words for tokenized sentence
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
