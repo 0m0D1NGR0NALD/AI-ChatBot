@@ -33,11 +33,12 @@ bot_name = "Chido"
 
 # Function to acquire response
 def get_response(msg):
+    # Tokenize input
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
-    
+    # Perform model prediction
     output = model(X)
     _, predicted = torch.max(output, dim=1)
     
