@@ -31,6 +31,7 @@ model.eval()
 # Setting bot name
 bot_name = "Chido"
 
+# Function to acquire response
 def get_response(msg):
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
