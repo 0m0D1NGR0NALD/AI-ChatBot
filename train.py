@@ -57,7 +57,7 @@ batch_size = 8 # Batch Size
 learning_rate = 0.001 # Learning Rate
 input_size = len(X_train[0]) # Size of input
 hidden_size = 8 # Hidden layer size
-output_size = len(tags)
+output_size = len(tags) # Size of Output
 print(input_size, output_size)
 
 # Dataset class
